@@ -1,12 +1,47 @@
 .navigation{
-    .container{}
-    &__logolink{}
-    &__logoimg{
-        width: 20rem;
+    width: 100%;
+    .container{
+        // width: max-content;
+        max-width: 120rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
     }
-    &__menu{}
-    &__menu-item{}
-    &__menu-item-link{}
+    &__logolink{
+      
+    }
+    &__logoimg{
+        width: 25rem;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        margin-left: 6rem;
+        margin-right: 3rem;
+    }
+    &__menu-item{
+        &:not(:first-child){
+            margin-left: 2rem;
+        }
+        &:last-child{
+            margin-left: 7rem;
+        }
+    }
+    &__menu-item-link{
+        
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            font-size: 2rem;
+            color:#4C5267;
+        }
+        &:hover{
+            color: $secondary;
+            transition: $slide-delay;
+        }
+    }
 
 
 
