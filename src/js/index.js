@@ -45,22 +45,23 @@
 
 
 
-//Events Toggles
-let DOMstrings = {
-  item1: '.events__item--1',
-  item2: '.events__item--2',
-  item3: '.events__item--3',
-  eimg: '.events__display-img',
-  elocation: '.event-location',
-  edate: '.event-date'
-}
 
-let firstitem = document.querySelector(DOMstrings.item1);
-let seconditem = document.querySelector(DOMstrings.item2);
-let thirstitem = document.querySelector(DOMstrings.item3);
-let elocation = document.querySelector(DOMstrings.elocation);
-let eimg = document.querySelector(DOMstrings.eimg);
-let edate = document.querySelector(DOMstrings.edate);
+//Events Toggles
+// let DOMstrings = {
+//   item1: '.events__item--1',
+//   item2: '.events__item--2',
+//   item3: '.events__item--3',
+//   eimg: '.events__display-img',
+//   elocation: '.event-location',
+//   edate: '.event-date'
+// }
+
+// let firstitem = document.querySelector(DOMstrings.item1);
+// let seconditem = document.querySelector(DOMstrings.item2);
+// let thirstitem = document.querySelector(DOMstrings.item3);
+// let elocation = document.querySelector(DOMstrings.elocation);
+// let eimg = document.querySelector(DOMstrings.eimg);
+// let edate = document.querySelector(DOMstrings.edate);
 // let data = {
 //   item1: {
 //     img: 'images/um6pevent.jpg',
@@ -79,41 +80,49 @@ let edate = document.querySelector(DOMstrings.edate);
 //   }
 // }
 
-let events = (() => {
-  let display_event = (img, location, date) =>{
-    elocation.innerHTML = `${location}`;
-    edate.innerHTML = `${date}`;
-    eimg.src = `${img}`;
-  }
-  if(firstitem === null){
-    return;
-  }
+// let events = (() => {
+//   let display_event = (img, location, date) =>{
+//     elocation.innerHTML = `${location}`;
+//     edate.innerHTML = `${date}`;
+//     eimg.src = `${img}`;
+//   }
+//   if(firstitem === null){
+//     return;
+//   }
   
-  firstitem.classList.add('event-active');
-  firstitem.addEventListener('click', (e) => {
+//   firstitem.classList.add('event-active');
+//   firstitem.addEventListener('click', (e) => {
     
-    firstitem.classList.add('event-active');
-    seconditem.classList.remove('event-active');
-    thirstitem.classList.remove('event-active');
+//     firstitem.classList.add('event-active');
+//     seconditem.classList.remove('event-active');
+//     thirstitem.classList.remove('event-active');
 
-    display_event(data.item1.img, data.item1.location, data.item1.date);
-  });
-  seconditem.addEventListener('click', (e) => {
-    firstitem.classList.remove('event-active');
-    seconditem.classList.add('event-active');
-    thirstitem.classList.remove('event-active');
+//     display_event(data.item1.img, data.item1.location, data.item1.date);
+//   });
+//   seconditem.addEventListener('click', (e) => {
+//     firstitem.classList.remove('event-active');
+//     seconditem.classList.add('event-active');
+//     thirstitem.classList.remove('event-active');
 
-    display_event(data.item2.img, data.item2.location, data.item2.date);
-  });
-  thirstitem.addEventListener('click', (e) => {
-    firstitem.classList.remove('event-active');
-    seconditem.classList.remove('event-active');
-    thirstitem.classList.add('event-active');
+//     display_event(data.item2.img, data.item2.location, data.item2.date);
+//   });
+//   thirstitem.addEventListener('click', (e) => {
+//     firstitem.classList.remove('event-active');
+//     seconditem.classList.remove('event-active');
+//     thirstitem.classList.add('event-active');
 
-    display_event(data.item3.img, data.item3.location, data.item3.date);
-  });
+//     display_event(data.item3.img, data.item3.location, data.item3.date);
+//   });
 
-})()
+// })()
 
-
+$(window).on('scroll',function(){
+  if($(window).scrollTop()){
+      $('.navigation').addClass('fixed-menu');
+      console.log("scrolled");
+  }
+  else{
+      $('.navigation').removeClass('fixed-menu');
+  }
+})
 
