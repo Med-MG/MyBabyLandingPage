@@ -1,0 +1,69 @@
+//colors
+$color-white: #fff;
+$color-black: #000;
+$color-lighter-black: #051441;
+$primary: #10266b;
+$primary-variant: #677294;
+$secondary: #4B53D8;
+$secondary-variant:#32C2EC;
+$tertiary: #0054f9;
+$tertiary-variant: #0000FF;
+$opacity:#F4F5F8;
+$background:#F5F4FF;
+$error:Red;
+$color-orchid: #2d3436;
+$footer:#EFF2F9;
+$shadow-color: #ded9ff;
+$color-text-dark: #3c4858;
+$light-gray: #E9ECF3;
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #F0F0F0;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$events-color-1: #D8F6E4;
+$events-color-2: #CFDEFF;
+$events-color-3: #FFF4D7;
+$events-color-4: #FDD6D9;
+$events-color-5: #FFE4DB;
+
+$learning-center-yellow: #E9C925;
+$learning-center-pink: #EC325E;
+//ANIMATIONS stuff
+$hover: all 0.2s ease-in;
+$slide: all 0.3s cubic-bezier(.55,0,.1,1);
+$slide-delay: all 0.4s 0.1s  cubic-bezier(.55,0,.1,1);
+$slide-slow: all 0.5s  cubic-bezier(.55,0,.1,1);
+$zoom: all 1s cubic-bezier(.55,0,.1,1);
+$zoom-slow: all 2.4s cubic-bezier(.55,0,.1,1);
+$default-shadow: 0 1.5rem 4rem 0 rgba($color-black, .2);
+$Second-shadow: 0 1rem 3.5rem 0 rgba($color-black,.1);
+$third-shadow: 0 .6rem 1.7rem 0 rgba($shadow-color, .3);
+$fourth-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+$default-transition:  all 0.5s ease;
+
+
+
+
+//layout vars
+$default-padding: 3rem;
+$default-font-size: 1.6rem;
+$medium-font-size: 3rem;
+$small-font-size: 2rem;
+
+$font-size-4: 4rem;
+$font-size-3: 3rem;
+$font-size-5: 5rem;
+
+$regular-font-weight: 400;
+$light-font-weight: 300;
+$medium-font-weight: 500;
+
+//video ratio
+$videoratio: 30rem
