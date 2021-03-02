@@ -1,40 +1,46 @@
 //colors
 $color-white: #fff;
 $color-black: #000;
-$color-lighter-black: #051441;
-$primary: #10266b;
-$primary-variant: #677294;
-$secondary: #4B53D8;
-$secondary-variant:#32C2EC;
-$tertiary: #0054f9;
-$tertiary-variant: #0000FF;
-$opacity:#F4F5F8;
-$background:#F5F4FF;
-$error:Red;
-$color-orchid: #2d3436;
-$footer:#EFF2F9;
-$shadow-color: #ded9ff;
-$color-text-dark: #3c4858;
-$light-gray: #E9ECF3;
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+$color-lighter-black: hsl(225, 86%, 14%);
+$primary-title: #2C234D;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-$color-grey-light-3: #F0F0F0;
+$primary: #26B0CC;
+$primary-variant: #9CD7F4;
 
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+$secondary: #E8507B;
+$secondary-variant:#F56E96;
 
-$events-color-1: #D8F6E4;
-$events-color-2: #CFDEFF;
-$events-color-3: #FFF4D7;
-$events-color-4: #FDD6D9;
-$events-color-5: #FFE4DB;
+$tertiary: #3147FF;
+$tertiary-variant: #7403FF;
 
-$learning-center-yellow: #E9C925;
-$learning-center-pink: #EC325E;
+$footer: #FCFAFB;
+
+$description-color: #707B8E;
+
+$design-yellow: #FFC107;
+$design-purple: #676099;
+
+$light-yellow: #F8EBD9;
+$lighter-yellow: #F8EBDE;
+
+// $opacity:#F4F5F8;
+// $background:#F5F4FF;
+// $error:Red;
+// $color-orchid: #2d3436;
+// $shadow-color: #ded9ff;
+// $color-text-dark: #3c4858;
+// $light-gray: #E9ECF3;
+// $color-tertiary-light: #2998ff;
+// $color-tertiary-dark: #5643fa;
+
+// $color-grey-light-1: #f7f7f7;
+// $color-grey-light-2: #eee;
+// $color-grey-light-3: #F0F0F0;
+
+// $color-grey-dark: #777;
+// $color-grey-dark-2: #999;
+// $color-grey-dark-3: #333;
+
 //ANIMATIONS stuff
 $hover: all 0.2s ease-in;
 $slide: all 0.3s cubic-bezier(.55,0,.1,1);
