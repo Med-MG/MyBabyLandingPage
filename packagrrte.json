@@ -1,8 +1,8 @@
 {
-  "name": "mybabystroller",
+  "name": "MyBaby",
   "version": "1.0.0",
-  "description": "mybaby.ma landing page",
-  "main": "gulpfile.js",
+  "description": "MyBaby.ma Landing page",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,18 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/Med-MG/MyBabyLandingPage.git"
   },
-  "keywords": [
-    "langing",
-    "page",
-    "babies",
-    "products"
-  ],
-  "author": "Mohamed Mougiuna, Zakaria Elhaouari",
+  "author": "Mohamed Mouiguina, Zakaria Elhaouari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Med-MG/MyBabyLandingPage/issues"
+    "url": "https://github.com/Med-MG/default-frontEnd.git/issues"
   },
-  "homepage": "https://github.com/Med-MG/MyBabyLandingPage#readme",
+  "homepage": "https://github.com/Med-MG/default-frontEnd.git#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
@@ -33,7 +27,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^4.0.1"
+    "gulp-useref": "^4.0.1",
+    "video.js": "^7.8.2"
   },
   "dependencies": {
     "gh-pages": "^2.2.0",
