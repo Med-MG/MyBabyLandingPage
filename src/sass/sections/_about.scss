@@ -15,9 +15,19 @@
         background-image: url(../images/poussettecrop1.jpg);
         background-position: 0 -197rem;
         background-size: 42rem 48rem;
-        @include responsive(1288) { // width < 1200?
-            // font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
-            left: 20rem;
+        // @include responsive(1288) { // width < 1200?
+        //     // font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
+        //     left: 20rem;
+        // }
+        // @include custom_media(1288) {
+        //     @media screen and (max-width: (1288 / 16)*1em) { 
+        //         left: 14rem;
+        //      };
+        // }
+        @include custom_media(1076) {
+            @media screen and (max-width: (1076 / 16)*1em) { 
+                left: 14rem;
+             };
         }
         @include responsive(tab-land) { // width < 1200?
             font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
@@ -27,13 +37,18 @@
             font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
             position: relative;
         }
+        @include responsive(phone) {
+            font-size: 45%; // 1rem = 7.2px, 7.2/16 = 45%
+            left: 50%;
+            transform: translateX(-50%);
+        }
        } 
        &--imagesShap{
         position: absolute;
         width: 30rem;
         height: 30rem;
         left: 21rem;
-        top: 36rem;
+        top: 27rem;
         @include responsive(tab-land) { // width < 1200?
             font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
             left: 13rem;
