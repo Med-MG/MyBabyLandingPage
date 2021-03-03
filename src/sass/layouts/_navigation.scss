@@ -1,5 +1,6 @@
 .navigation{
     width: 100%;
+    padding: 0 3rem;
     .container{
         // width: max-content;
         max-width: 120rem;
@@ -19,13 +20,23 @@
         align-items: center;
         margin-left: 6rem;
         margin-right: 3rem;
+        @include responsive(tab-port){
+            display: none;
+        }
     }
     &__menu-item{
+        // transition: $zoom-slow;
         &:not(:first-child){
             margin-left: 2rem;
         }
         &:last-child{
             margin-left: 7rem;
+        }
+        @include responsive(tab-port){
+            margin: 1rem 0 !important;
+            &:last-child{
+                display: none;
+            }
         }
     }
     &__menu-item-link{
@@ -36,6 +47,12 @@
             text-decoration: none;
             font-size: 2rem;
             color:#4C5267;
+            @include custom_media(1102){
+                font-size: 1.7rem;
+            }
+            @include responsive(tab-port){
+                font-size: 2.7rem;
+            }
         }
         &:hover{
             color: $secondary;
@@ -44,6 +61,80 @@
     }
 
 
+    &__humberger-icon{
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    &__navicon{
+        background: $primary-title;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 40px;
+        display: none;
+        z-index: 2;
+        @include responsive(tab-port){
+            display: block;
+        }
+        &::before, &::after{
+            background: $primary-title;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        &::before{
+            top: 10px;
+        } 
+        &::after{
+            top: -10px;
+        }
+        
+    }
+
+    &__humberger-btn{
+        display: none;
+        &:checked ~ .navigation__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            right: -26px;
+            top: -9px;
+            margin: 1rem 0;
+            background: $light-yellow;
+            width: 50rem;
+            height: 100%;
+            // z-index: -1;
+            height: 100%;
+            padding: 12rem 6rem;
+            // transition: $zoom-slow;
+        }
+
+        
+
+        &:checked ~ .navigation__humberger-icon .navigation__navicon{
+            background: transparent;
+        }
+        &:checked ~ .navigation__humberger-icon .navigation__navicon:before{
+            transform: rotate(45deg);
+            background: $secondary;
+        }        
+        &:checked ~ .navigation__humberger-icon .navigation__navicon:after{
+            transform: rotate(-45deg);
+            background: $secondary;
+
+        }
+        &:checked ~ .navigation__humberger-icon:not(.steps) .navigation__navicon:before, &:checked ~ .navigation__humberger-icon:not(.steps) .navigation__navicon:after{
+            top:0;
+        }
+     }
+    }
 
 
-}
