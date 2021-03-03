@@ -55,12 +55,14 @@
     }
 
     &--header {
-        @include responsive(small-desktop) {
-            margin: 4rem auto;
-            display: block !important;
-            width: 35rem;
+        background-color: $design-yellow;
+        color: $color-white;
+        padding: 2rem 8rem;
+        font-size: 2rem;
+        font-weight: 600;
+        &::after {
+            background-color: $design-yellow;
         }
-
     }
 
     &--tertiary {
