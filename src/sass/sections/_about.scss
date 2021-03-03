@@ -1,6 +1,7 @@
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 0 15rem 0;
     @include responsive(tab-port) { // width < 900?
         // font-size: 50%; //1 rem = 8px, 8/16 = 50%
         grid-template-columns: repeat(1, 100%);
@@ -24,6 +25,7 @@
         //         left: 14rem;
         //      };
         // }
+
         @include custom_media(1076) {
             @media screen and (max-width: (1076 / 16)*1em) { 
                 left: 14rem;
@@ -48,7 +50,7 @@
         width: 30rem;
         height: 30rem;
         left: 21rem;
-        top: 27rem;
+        top: 29rem;
         @include responsive(tab-land) { // width < 1200?
             font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
             left: 13rem;
