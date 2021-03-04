@@ -4,10 +4,9 @@
     margin: 0rem 0rem 0rem 21rem;
     &__siege{
         &--title{
-            color: $primary-title;
+            @include sections-title;
             margin: 0 0.6em;
-            font-size: 4.5rem;
-            font-weight: 600;
+
            
         }
         &--desc{

@@ -15,6 +15,13 @@
     font-size: 2rem;
     color: $description-color;
 }
+
+@mixin sections-title {
+    color: $primary-title;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
 @mixin medium-font {
     font-size: $medium-font-size;
     font-weight: $medium-font-weight;
