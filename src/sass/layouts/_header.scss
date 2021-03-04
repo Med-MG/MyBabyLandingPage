@@ -2,6 +2,14 @@
     padding: 20rem 0 25rem 0;
     overflow: hidden;
     position: relative;
+    top: -9rem;
+    @include custom_media(536){
+        top: -10rem;
+    }
+
+    @include responsive(iphone){
+        top: -12rem;
+    }
     &::before{
         content: '';
         background: url('../images/shap.png') no-repeat scroll top right;
