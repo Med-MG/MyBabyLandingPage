@@ -77,6 +77,15 @@
             right: 41rem;
             height: 30rem;
             filter: drop-shadow(-2px 40px 58px rgba(185, 62, 100, 0.12));
+            @include responsive(tab-land) { // width < 1200?
+                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
+                right: 27rem;
+                top: 25rem;
+            }
+            @include responsive(tab-port) { // width < 900?
+                font-size: 50%; //1 rem = 8px, 8/16 = 50%
+        
+            }
         }
         &--Poussette{
             position: absolute;
@@ -87,6 +96,10 @@
             height: 37rem;        
             transform: scaleX(-1);
             filter: drop-shadow(-13px 40px 54px rgba(185, 62, 100, 0.12));
+            @include responsive(tab-land) { // width < 1200?
+                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
+                left: 17rem;
+            }
         }
         &--bigRound{
             position: absolute;
@@ -97,6 +110,10 @@
             top: 3rem;
             height: 45rem;
             background-color: #f8ebd9;
+            @include responsive(tab-land) { // width < 1200?
+                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
+                right: 9rem;
+            }
         }
         &--liRound{
             position: absolute;
@@ -106,12 +123,21 @@
             top: 2rem;
             height: 28rem;
             background-color: #f6ede6;
+            @include responsive(tab-land) { // width < 1200?
+                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
+                right: 3rem;
+                top: 0rem;
+            }
         }
         &--imagesShap{
             position: absolute;
             top: 29rem;
             right: 27rem;
-        
+            @include responsive(tab-land) { // width < 1200?
+                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
+                top: 30rem;
+                right: 15rem;
+            }
         }
     }
 }
