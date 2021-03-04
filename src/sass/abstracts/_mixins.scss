@@ -12,8 +12,8 @@
 
 
 @mixin subtitle-font {
-    font-size: $font-size-4;
-    font-weight: $medium-font-weight;
+    font-size: 2rem;
+    color: $description-color;
 }
 @mixin medium-font {
     font-size: $medium-font-size;
