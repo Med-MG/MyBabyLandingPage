@@ -88,7 +88,11 @@
         /* margin-top: 3rem; */
         top: 4rem;
         position: relative;
-        right: 20rem;
+        right: 12rem;
+        position: relative;
+        @include responsive(tab-land) { // width < 1200?
+            right: 0;
+        }
 
         &::after {
             background-color: $design-yellow;
@@ -101,14 +105,14 @@
         border: solid #f56e96;
         font-size: 2rem;
         font-weight: 600;
-        margin: 34px 2em;
+        margin: 1rem 2rem;
         /* margin-top: 3rem; */
         top: 4rem;
         position: relative;
         // right: 20rem;
-        &::after {
-            background-color: $secondary;
-        }
+        // &::after {
+        //     background-color: $secondary;
+        // }
     }
 
     &--tertiary {
