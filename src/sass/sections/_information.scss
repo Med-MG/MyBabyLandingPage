@@ -6,7 +6,7 @@
     @include responsive(tab-land) {
         // width < 1200?
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1.7fr;
+        grid-template-rows: 1fr 1.5fr;
         margin: 0rem 0rem 0rem 0rem;
         text-align: center;
     }
@@ -141,13 +141,14 @@
         &--strtransparent {
             position: absolute;
             width: 42rem;
-            height: 42rem;
             border-radius: 3rem;
             background-color: white;
             width: 27rem;
             top: 18rem;
-            right: 41rem;
+            // right: 41rem;
             height: 30rem;
+            right: 34%;
+            transform: translateX(-50%);
             filter: drop-shadow(-2px 40px 58px rgba(185, 62, 100, 0.12));
 
             @include responsive(tab-land) {
@@ -172,7 +173,8 @@
             object-fit: cover;
             width: 25rem;
             height: 37rem;
-            transform: scaleX(-1);
+            left: 50%;
+            transform: translateX(-50%) scaleX(-1);
             filter: drop-shadow(-13px 40px 54px rgba(185, 62, 100, 0.12));
 
             @include responsive(tab-land) {
@@ -196,7 +198,7 @@
             position: absolute;
             border-radius: 50%;
             width: 45rem;
-            right: 22rem;
+            right: 25%;
             /* bottom: 40rem; */
             top: 3rem;
             height: 45rem;
@@ -213,7 +215,8 @@
             position: absolute;
             border-radius: 50%;
             width: 28rem;
-            right: 12rem;
+            left: 60%;
+            transform: translateX(-50%);
             top: 2rem;
             height: 28rem;
             background-color: #f6ede6;

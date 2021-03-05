@@ -1,6 +1,8 @@
 .features{
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
+    background: url(../images/Vector.svg);
+    background-position: right 100% bottom -89px;
     margin-top: 9rem;
     position: relative;
     @include responsive(tab-land) { // width < 1200?
@@ -30,7 +32,8 @@
             background-color: #e7e6ef;
             width: 20rem;
             height: 20rem;
-            right: 14rem;
+            transform: translateX(-80%);
+            left: 80%;
             @include responsive(tab-land) { // width < 1200?
                 left: 65%;
                 transform: translateX(-50%);
@@ -42,21 +45,21 @@
             background-color: #676099;
             width: 43rem;
             height: 43rem;
-            right: 14rem;
-            @include responsive(tab-land) { // width < 1200?
-                left: 50%;
-                transform: translateX(-50%);
-            }
+            left: 50%;
+            transform: translateX(-50%);
+            // @include responsive(tab-land) { // width < 1200?
+            //     left: 50%;
+            //     transform: translateX(-50%);
+            // }
         }
         &--PoussImg{
             width: 55rem;
-            left: 21rem;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: 2rem;
             position: absolute;
-            @include responsive(tab-land) { // width < 1200?
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 0rem;
+            @include responsive(tab-land) {  
+                bottom: 3rem;
             }
         }
     }
@@ -78,6 +81,10 @@
         &--carac{
             display: grid;
             grid-template-columns: repeat(3 , 1fr);
+            @include responsive(tab-land) { // width < 1200?
+                margin: auto;
+                width: 80%;
+            }
             .caracteristique{
                 text-align: center;
                 padding: 21px 0rem 1rem 0rem;
