@@ -150,10 +150,13 @@
         }
         &--BtnAch{
             background: none;
-            padding: 0.5em 4em;
+            padding: 2rem 8rem;
             border: solid #f56e96;
             box-sizing: border-box;
+            font-size: 2rem;
+            font-weight: 600;
             color: #f56e96;
+            top: 4rem;
             /* filter: drop-shadow(0 15px 30px rgba(150,6,49,.16)); */
             border-radius: 11px;
             margin: 34px 2em;

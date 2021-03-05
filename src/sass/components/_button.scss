@@ -94,6 +94,22 @@
             background-color: $design-yellow;
         }
     }
+    &--about {
+        background-color: none;
+        color: #f56e96;
+        padding: 2rem 8rem;
+        border: solid #f56e96;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 34px 2em;
+        /* margin-top: 3rem; */
+        top: 4rem;
+        position: relative;
+        // right: 20rem;
+        &::after {
+            background-color: $secondary;
+        }
+    }
 
     &--tertiary {
         background-color: $tertiary;
