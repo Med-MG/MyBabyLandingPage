@@ -110,9 +110,9 @@
         top: 4rem;
         position: relative;
         // right: 20rem;
-        &::after {
-            background-color: $secondary;
-        }
+        // &::after {
+        //     background-color: $secondary;
+        // }
     }
 
     &--tertiary {
