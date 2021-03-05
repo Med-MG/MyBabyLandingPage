@@ -1,0 +1,31 @@
+.buy{
+    &__container{}
+    &__row{}
+    &__information{
+        &-logo{}
+        &-list{}
+        &-item{
+            &-icon{}
+            &-heading{}
+            &-title{}
+            &-subtitle{}
+        }
+    }
+
+    &__round{
+        &--one{}
+        &--two{}
+    }
+
+    &__price{
+        &--num{}
+        &--text{}
+    }
+
+    &__form{
+        &-title{}
+        &-list{}
+        &-item{}
+    }
+
+}
