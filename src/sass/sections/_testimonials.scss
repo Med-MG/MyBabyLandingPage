@@ -1,0 +1,64 @@
+.testimonials{
+    &__heading{
+        text-align: center;
+        &--title{
+            @include sections-title;
+        }
+        &--description{
+            @include subtitle-font;
+        }
+    }
+    &__container{
+        margin: 1rem auto;
+        // max-width: 120rem;
+    }
+    &__row{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    &__card{
+        margin: 0 3rem;
+        box-shadow: $default-shadow;
+        padding: 4rem;
+        border-radius: 2rem;
+        width: 36rem !important;
+        &-heading{
+            display: flex;
+            &-text{
+                margin-left: 1rem;
+            }
+        }
+        &-imgcontainer{
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            background: url('../images/poussettetemm.jpg') no-repeat center ;
+            background-size: cover ;
+        }
+        &-title{
+            color: $secondary;
+            font-size: 1.8rem;  
+            font-weight: 400;
+        }
+        &-subtitle{
+            color: #949CAA;
+            font-size: 1.2rem;
+        }
+        &-subheading{
+            &-description{
+                color: $description-color;
+                font-size: 1.6rem;
+                margin: 2rem 0;
+            }
+            &-stars{
+                .fas{
+                    color: $design-yellow !important;
+                    &:last-child{
+                        color: #DEE1F3 !important;
+                    }
+                }
+            }
+        }
+    }
+}

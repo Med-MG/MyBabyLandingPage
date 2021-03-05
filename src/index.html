@@ -1,9 +1,9 @@
 @@include('includes/nav.html')
 <!-- @@include('includes/navigation.html') -->
-<!-- @@include('includes/header.html')
-@@include('includes/about.html')
-@@include('includes/information.html') -->
-@@include('includes/features.html')
+<!-- @@include('includes/header.html') -->
+<!-- @@include('includes/about.html') -->
+<!-- @@include('includes/information.html')  -->
+<!-- @@include('includes/features.html') -->
 @@include('includes/testimonials.html')
 @@include('includes/form.html')
 @@include('includes/footer.html')
@@ -23,35 +23,10 @@
   //   backSpeed: 40,
   // });
 
-  // var owl = $(".owl-carousel");
-  // owl.owlCarousel({
-  //   loop: true,
-  //   autoWidth:true,
-  //   autoplay:false,
-  //   autoplayTimeout:3000,
-  //   margin: 10,
-  //   responsiveClass: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //     600: {
-  //       items: 2,
-  //       margin: 20,
-  //       nav: false,
-  //     },
-  //     1980: {
-  //       items: 3,
-  //       margin: 20,
-  //       nav: false,
-  //       loop: true,
-  //     },
-  //   },
-  // });
 
   // owl.owlCarousel();
-  // // Go to the next item
-  // $(".news-next").click(function () {
+  // Go to the next item
+  // $(".testimonials__row").click(function () {
   //   owl.trigger("next.owl.carousel");
   // });
   // // Go to the previous item
@@ -60,4 +35,32 @@
   //   // Parameters has to be in square bracket '[]'
   //   owl.trigger("prev.owl.carousel", [300]);
   // });
+
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    loop: true,
+    autoWidth:false,
+    autoplay:false,
+    autoplayTimeout:3000,
+    margin: 10,
+    responsiveClass: true,
+    items: 3,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+        margin: 20,
+        nav: false,
+      },
+      1980: {
+        items: 4,
+        margin: 20,
+        nav: false,
+        loop: true,
+      },
+    },
+  });
+
 </script>

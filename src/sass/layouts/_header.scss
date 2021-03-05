@@ -61,11 +61,13 @@
             &-price{
                 font-size: 5rem;
                 color: $primary;
-                text-transform: uppercase
+                text-transform: uppercase;
                 &--text{
                     font-weight: 300;
                 }
-                // &--num{}
+                // &--num{
+                    
+                // }
             }
             &-bottomdescription{
                 @include subtitle-font;
