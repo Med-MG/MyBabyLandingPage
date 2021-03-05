@@ -3,11 +3,18 @@
     padding: 10rem 15rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include custom_media(826){
+        padding: 10rem 8rem;
+    }
+    @include custom_media(734){
+        padding: 10rem 6rem;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 19rem;
+    }
     &__about{
-        
-        align-content: space-around;
+        margin-bottom: 6rem;
         &-logo{
-            width: 15rem;
+            width: 25rem;
             margin-bottom: 4rem;
         }
         &-description{
@@ -15,19 +22,28 @@
             width: 60%;
             margin-bottom: 4rem;
         }
-        &-form{}
+        // &-form{}
         &-newsletter{
             width: 40%;
             font-size: 1.5rem;
             font-weight: 600;
             padding: 1.7rem 2rem;
             width: 55%;
-            border: 1px solid $secondary-variant;
+            border: 1px solid $description-color;
             border-radius: .6rem;
-            color: $primary-variant;
+            color:  $primary-title;
             box-shadow: $default-shadow;
+            font-weight: 400;
             &:focus{
              border: 1px solid $primary;
+             & ~ .footer__about-submit {
+             border: 1px solid $secondary;
+
+             }
+             @include responsive(phone-1){
+                 width: 78%;
+             }
+
             }
             &::placeholder{
                 color: $description-color;
@@ -35,24 +51,69 @@
                 font-weight: 400;
             }
         }
-        &-about-submit{}
+        &-submit{
+            background: $secondary;
+            color: #ffffff;
+            padding: 1.9rem 2rem 1.8rem 2rem;
+            font-size: 1.5rem;
+            border-top-right-radius: .6rem;
+            border-bottom-right-radius: .6rem;
+            margin-left: -1rem;
+        }
     }
 
     &__links{
         display: flex;
+        justify-content: space-around;
         &-list{
-            &--one{}
-            &--two{}
+            font-size: 2.5rem;
+            // &--one{}
+            &--two{
+                margin-left: 8rem;
+            }
 
-            &-item{}
+            &-item{
+                &:first-child{
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: $primary-title;
+                }
+
+                &:not(:first-child) {
+                    font-weight: 200;
+                    color: $description-color;
+                }
+            }
         }
     }
 }
 
 .subfooter{
-    &__container{
-        &-social{}
-        &-text{}
+    background: $footer;
+    padding: 3rem 15rem;
+    color: $description-color;
+    font-size: 2rem;
+    border-top: 1px solid $light-gray;
+    .fab{
+        margin-left: 1rem !important;
     }
-    &__copyright{}
+
+    @include responsive(iphone){
+        padding: 3rem 4rem;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        @include responsive(iphone){
+            flex-direction: column;
+            align-items: center;
+        }
+        &-social{
+            display: flex;
+            align-items: baseline;
+        }
+        // &-text{}
+    }
+    // &__copyright{}
 }
