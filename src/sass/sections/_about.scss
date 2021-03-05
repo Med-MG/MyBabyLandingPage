@@ -21,9 +21,10 @@
         height: 42rem;
         left: 29rem;
         border-radius: 3rem;
-        background-image: url(../images/poussettecrop1.jpg);
-        background-position: 0 -197rem;
-        background-size: 42rem 48rem;
+        background-image: url(../images/lightweight.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
         // @include responsive(1288) { // width < 1200?
         //     // font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
         //     left: 20rem;
