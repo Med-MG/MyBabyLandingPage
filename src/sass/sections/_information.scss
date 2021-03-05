@@ -2,12 +2,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0rem 0rem 0rem 21rem;
-    @include responsive(tab-land) { // width < 1200?
+
+    @include responsive(tab-land) {
+        // width < 1200?
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
         margin: 0rem 0rem 0rem 0rem;
         text-align: center;
     }
+
     // @include custom_media(1100) {
     //     @media screen and (max-width: (1100 / 16)*1em) {
     //         grid-template-columns: 1fr;
@@ -21,6 +24,9 @@
         &--title {
             @include sections-title;
             margin: 0 0.6em;
+            @include responsive(tab-port) { // width < 900?
+                margin: 2rem auto;
+            }
         }
 
         &--desc {
@@ -28,10 +34,9 @@
             font-size: 3rem;
             font-weight: 400;
             margin: 2rem 3rem;
-            // @include responsive(tab-port) { // width < 900?
-            //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
-            //     color: red;
-            // }
+            @include responsive(tab-port) { // width < 900?
+                margin: 2rem auto;
+            }
         }
 
         &--list {
@@ -40,48 +45,66 @@
             font-size: 1.8rem;
             font-weight: 400;
             margin: 2rem 3rem;
-            @include responsive(tab-land) { // width < 1200?
+
+            @include responsive(tab-land) {
+                // width < 1200?
                 justify-content: center;
             }
+
             ul {
                 list-style: none;
                 margin: 0 4em 0 0;
-
+                @include responsive(tab-land) {
+                    margin: 0 0 0 0;
+                    padding: 0 0em 0px 4rem;
+                }
             }
         }
-    
 
         &--line {
             border: 0.1px solid #c4c4c4;
             width: 44rem;
             margin: 0px 0rem 4rem 3rem;
 
-            @include custom_media(1100) {
-                @media screen and (max-width: (1100 / 16)*1em) {
-                    display: flex;
-                    justify-content: center;
-                };
+            // @include custom_media(1100) {
+            //     @media screen and (max-width: (1100 / 16)*1em) {
+            //         // margin: 0px auto 4rem auto;
+            //         // width: 40rem;
+            //         left: 50%;
+            //         transform: translateX(-65%);
+            //         position: relative;
+            //     };
+            // }
+            @include responsive(tab-land) {
+                // width < 1200?
+                left: 50%;
+                transform: translateX(-50%);
+                position: relative;
             }
         }
 
         &--achatRating {
             display: flex;
 
-            @include custom_media(1100) {
-                @media screen and (max-width: (1100 / 16)*1em) {
-                    display: flex;
-                    justify-content: center;
-                }
-            };
+            // @include custom_media(1100) {
+            //     @media screen and (max-width: (1100 / 16)*1em) {
+            //         display: flex;
+            //         justify-content: center;
+            //     }
+            // };
+            @include responsive(tab-land) {
+                // width < 1200?
+                justify-content: center;
+            }
 
             .achat {
                 padding: 0 5rem 0 4rem;
-                @include custom_media(1100) {
-                    @media screen and (max-width: (1100 / 16)*1em) {
-                        padding: 0px 12rem 0 2rem;
-                    }
-                };
 
+                // @include custom_media(1100) {
+                //     @media screen and (max-width: (1100 / 16)*1em) {
+                //         padding: 0px 12rem 0 2rem;
+                //     }
+                // };
                 .achatRating {
                     border-radius: 50%;
                     background-color: #FFFFFF;
@@ -109,10 +132,12 @@
         }
     }
 
-
     &__siegeIm {
         position: relative;
-
+        @include responsive(tab-land) {
+            // width < 1200?
+            margin-top: 2rem;
+        }
         &--strtransparent {
             position: absolute;
             width: 42rem;
@@ -127,16 +152,17 @@
 
             @include responsive(tab-land) {
                 // width < 1200?
-                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
-                right: 27rem;
-                top: 25rem;
+                transform: translateX(-50%);
+                left: 38%;
             }
 
-            @include responsive(tab-port) {
-                // width < 900?
-                font-size: 50%; //1 rem = 8px, 8/16 = 50%
+            ;
 
-            }
+            // @include responsive(tab-port) {
+            //     // width < 900?
+            //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+
+            // };
         }
 
         &--Poussette {
@@ -149,16 +175,20 @@
             transform: scaleX(-1);
             filter: drop-shadow(-13px 40px 54px rgba(185, 62, 100, 0.12));
 
-            // @include responsive(tab-land) {
-            //     // width < 1200?
-            //     font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
-            //     left: 17rem;
-            // }
-            @include custom_media(1100) {
-                @media screen and (max-width: (1100 / 16)*1em) {
-                    left: 30rem;
-                }
-            };
+            @include responsive(tab-land) {
+                // width < 1200?
+                // left: 54rem;
+                // top: 1rem;
+                left: 50%;
+                transform: translateX(-50%) scaleX(-1);
+
+            }
+
+            // @include custom_media(1100) {
+            //     @media screen and (max-width: (1100 / 16)*1em) {
+            //         left: 54rem;
+            //     }
+            // };
 
         }
 
@@ -174,8 +204,8 @@
 
             @include responsive(tab-land) {
                 // width < 1200?
-                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
-                right: 9rem;
+                transform: translateX(-50%);
+                left: 50%;
             }
         }
 
@@ -189,10 +219,8 @@
             background-color: #f6ede6;
 
             @include responsive(tab-land) {
-                // width < 1200?
-                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
-                right: 3rem;
-                top: 0rem;
+                transform: translateX(-55%);
+                left: 60%;
             }
         }
 
@@ -203,9 +231,10 @@
 
             @include responsive(tab-land) {
                 // width < 1200?
-                font-size: 57%; //1 rem = 9.32px, 9/16 = 50%
-                top: 30rem;
-                right: 15rem;
+                transform: translateX(-50%);
+                left: 50%;
+                width: 20rem;
+                height: 20rem;
             }
         }
     }
