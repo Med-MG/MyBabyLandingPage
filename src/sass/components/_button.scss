@@ -64,6 +64,21 @@
             background-color: $design-yellow;
         }
     }
+
+    &--form{
+        background-color: $design-yellow;
+        color: $color-white;
+        padding: 2rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 60%;
+        &::after {
+            background-color: $design-yellow;
+        }
+        @include custom_media(1048){
+            width: 72%;
+        }
+    }
     &--carac {
         background-color: $design-yellow;
         color: $color-white;
