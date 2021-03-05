@@ -1,0 +1,58 @@
+.footer{
+    background: $footer;
+    padding: 10rem 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__about{
+        
+        align-content: space-around;
+        &-logo{
+            width: 15rem;
+            margin-bottom: 4rem;
+        }
+        &-description{
+            @include subtitle-font;
+            width: 60%;
+            margin-bottom: 4rem;
+        }
+        &-form{}
+        &-newsletter{
+            width: 40%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 1.7rem 2rem;
+            width: 55%;
+            border: 1px solid $secondary-variant;
+            border-radius: .6rem;
+            color: $primary-variant;
+            box-shadow: $default-shadow;
+            &:focus{
+             border: 1px solid $primary;
+            }
+            &::placeholder{
+                color: $description-color;
+                font-size: 1.7rem;
+                font-weight: 400;
+            }
+        }
+        &-about-submit{}
+    }
+
+    &__links{
+        display: flex;
+        &-list{
+            &--one{}
+            &--two{}
+
+            &-item{}
+        }
+    }
+}
+
+.subfooter{
+    &__container{
+        &-social{}
+        &-text{}
+    }
+    &__copyright{}
+}
