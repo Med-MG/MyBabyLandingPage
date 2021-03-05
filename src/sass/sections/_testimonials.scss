@@ -1,4 +1,5 @@
 .testimonials{
+    padding-top: 35rem;
     &__heading{
         text-align: center;
         &--title{
@@ -10,7 +11,7 @@
     }
     &__container{
         margin: 1rem auto;
-        // max-width: 120rem;
+        max-width: 120rem;
     }
     &__row{
         display: flex;
