@@ -88,7 +88,11 @@
         /* margin-top: 3rem; */
         top: 4rem;
         position: relative;
-        right: 20rem;
+        right: 12rem;
+        position: relative;
+        @include responsive(tab-land) { // width < 1200?
+            right: 0;
+        }
 
         &::after {
             background-color: $design-yellow;

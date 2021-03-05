@@ -3,6 +3,11 @@
     grid-template-columns: repeat(2 , 1fr);
     margin-top: 9rem;
     position: relative;
+    @include responsive(tab-land) { // width < 1200?
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 0rem;
+    }
     &__shape-bg{
         position: absolute;
         top: 0;
@@ -26,6 +31,10 @@
             width: 20rem;
             height: 20rem;
             right: 14rem;
+            @include responsive(tab-land) { // width < 1200?
+                left: 65%;
+                transform: translateX(-50%);
+            }
         }
         &--bigRound{
             position: absolute;
@@ -34,17 +43,29 @@
             width: 43rem;
             height: 43rem;
             right: 14rem;
+            @include responsive(tab-land) { // width < 1200?
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
         &--PoussImg{
             width: 55rem;
             left: 21rem;
             bottom: 2rem;
             position: absolute;
+            @include responsive(tab-land) { // width < 1200?
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0rem;
+            }
         }
     }
     &__featuresInfo{
         text-align: center;
         width: 71rem;
+        @include responsive(tab-land) { // width < 1200?
+            width: 100%;
+        }
         &--title{
             @include sections-title;
         }

@@ -6,7 +6,7 @@
     @include responsive(tab-land) {
         // width < 1200?
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 1fr 1.7fr;
         margin: 0rem 0rem 0rem 0rem;
         text-align: center;
     }
