@@ -1,31 +1,168 @@
 .buy{
-    &__container{}
-    &__row{}
+    background: linear-gradient(252.4deg, #EE6D95 0.21%, rgba(235, 223, 180, 0) 119.01%);
+    padding: 10rem;
+    @include responsive(phone-1){
+        padding: 10rem 4rem; 
+    }
+    &__container{
+        background: #fff;
+        padding: 2rem;
+        border-radius: 2.6rem;
+        @include custom_media(1048){
+            padding-bottom: 5rem;
+        }
+
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        @include responsive(tab-port-1){
+            flex-direction: column;
+        }
+    }
     &__information{
-        &-logo{}
-        &-list{}
+        background: #41B7CD;
+        color: #fff;
+        width: 30%;
+        padding: 2rem 0 25rem 4rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        position: relative;
+        backface-visibility: hidden;
+        @include responsive(tab-land){
+            width: 40%;
+        }
+        @include custom_media(1048){
+            width: 45%;
+        }
+        @include responsive(tab-port-1){
+            width: 100%;
+        }
+        &-logo{
+            font-size: 1.7rem;
+        }
+        &-list{
+            margin-top: 7rem;
+        }
         &-item{
-            &-icon{}
-            &-heading{}
+            display: flex;
+            margin-bottom: 3rem;
+            &-icon{
+                width: 4.5rem;
+                color: #fff;
+                @include custom_media(766){
+                    width: 6.5rem;
+                }
+                @include responsive(phone-1){
+                    width: 5.5rem;
+                }
+            }
+
+            &-heading{
+                font-size: 1.5rem;
+                margin-left: 3rem;
+                @include custom_media(766){
+                    font-size: 2.4rem; 
+                }
+                @include responsive(phone-1){
+                    font-size: 1.8rem;
+                }
+            }
             &-title{}
             &-subtitle{}
+        }
+        &-design{
+            position: absolute;
+            height: 25rem;
+            width: 25rem;
+            right: -4rem;
+            bottom: -4rem;
+            &-inner{
+                position: relative;
+                height: 100%;
+            }
         }
     }
 
     &__round{
-        &--one{}
-        &--two{}
+        &--one{
+            width: 25rem;
+            height: 25rem;
+            background: #F8EBDE;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0rem;
+            right: 0rem;
+        }
+        &--two{
+            width: 15rem;
+            height: 15rem;
+            background: rgba(232, 80, 123, 0.81);
+            border-radius: 50%;
+            position: absolute;
+            top: -2rem;
+            left: -2rem;
+        }
     }
 
     &__price{
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         &--num{}
-        &--text{}
+        &--text{
+            font-weight: 200;
+        }
     }
 
     &__form{
-        &-title{}
-        &-list{}
-        &-item{}
+        width: 60%;
+        text-align: center;
+        @include custom_media(1048){
+            width: 55%;
+        }
+        @include responsive(tab-port-1){
+            margin-top: 4rem;
+            width: 100%;
+        }
+        &-title{
+            margin-bottom: 4rem;
+            @include sections-title;
+            font-size: 2.5rem;
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+        }
+        &-item{
+            margin: 0 auto;
+            margin-bottom: 4rem;
+            width: 40%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 1.7rem 2rem;
+            width: 60%;
+            border: 1px solid $secondary-variant;
+            border-radius: .6rem;
+            color: $primary-variant;
+            box-shadow: $default-shadow;
+            &:focus{
+             border: 1px solid $primary;
+            }
+            &::placeholder{
+                color: $description-color;
+                font-size: 1.7rem;
+                font-weight: 400;
+            }
+            @include custom_media(1048){
+                width: 72%;
+            }
+        }
     }
 
 }
