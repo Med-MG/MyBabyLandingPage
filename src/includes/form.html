@@ -1,4 +1,4 @@
-<section class="buy">
+<section class="buy" id="buy__form">
 <div class="buy__container">
     <div class="buy__row">
         <div class="buy__information" action="#" id="buy-form">
@@ -40,13 +40,13 @@
             </div>
 
         </div>
-        <form class="buy__form" action="#" method="POST">
+        <form class="buy__form"  action="#" method="POST">
             <h2 class="buy__form-title">INFORMATIONS DU CONTACT</h2>
             <ul class="buy__form-list">
                 <input type="text" id="fullname" placeholder="Nom & Prénom" class="buy__form-item">
-                <input type="tel" id="phone" placeholder="Téléphone" class="buy__form-item">
+                <input type="tel" id="phone" placeholder="Téléphone" required class="buy__form-item">
                 <p class="errorconf"></p>
-                <input type="tel" id="phone2" placeholder="Confirmation Téléphone" class="buy__form-item">
+                <input type="tel" id="phone2" placeholder="Confirmation Téléphone" required class="buy__form-item">
                 <p class="errorconf errorconf--two"></p>
                 <input type="text" id="adresse" placeholder="Adresse" class="buy__form-item">
                 

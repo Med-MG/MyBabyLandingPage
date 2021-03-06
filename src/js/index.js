@@ -31,16 +31,19 @@ $(document).ready(function() {
     // console.log('fdfdfdf')
 
     var dataString = `fullname=${fullname}&phone=${phone}&adresse=${adresse}`;
-
-    $.ajax({
-      type : "POST",
-      url : "functions.php",
-      data : dataString,
-      cache : false,
-      success : function() {
-        
-      }
-    });
+    $("#popup").addClass('popup');
+    $(".popup__content").addClass('show-content');
+    // $.ajax({
+    //   type : "POST",
+    //   url : "functions.php",
+    //   data : dataString,
+    //   cache : false,
+    //   success : function() {
+    //     $("#popup").addClass('popup');
+    //     $(".popup__content").addClass('show-content');
+    //     fbq('track', 'Purchase');
+    //   }
+    // });
 
   })
 })

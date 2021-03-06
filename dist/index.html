@@ -40,16 +40,16 @@
                 <a href="#" class="navigation__menu-item-link">Accueil</a>
             </li>            
             <li class="navigation__menu-item">
-                <a href="#" class="navigation__menu-item-link">Spécifications</a>
+                <a href="#aboutsection" class="navigation__menu-item-link">Spécifications</a>
             </li>            
             <li class="navigation__menu-item">
-                <a href="#" class="navigation__menu-item-link">caractéristiques</a>
+                <a href="#features" class="navigation__menu-item-link">caractéristiques</a>
             </li>            
             <li class="navigation__menu-item">
-                <a href="#" class="navigation__menu-item-link">Témoignages</a>
+                <a href="#testimonials" class="navigation__menu-item-link">Témoignages</a>
             </li>
             <li class="navigation__menu-item">
-                <a href="#buy" class="btn btn--nav">ACHETER</a>
+                <a href="#buy__form" class="btn btn--nav">ACHETER</a>
             </li>
         </ul>
         
@@ -74,7 +74,7 @@
                     <span class="header__container-content-price--num">1749 MAD</span>
                 </h2>
                 <p class="header__container-content-bottomdescription">La poussette 2en1 tendance convient aux enfants de la naissance à 4 ans</p>
-                <a href="#buy-now" class="btn btn--header">acheter maintenant</a>
+                <a href="#buy__form"  class="btn btn--header">acheter maintenant</a>
             </div>
             <div class="header__container-product">
                 <img src="images/prodtransparenttt.png" alt="" class="header__container-product-image">
@@ -83,7 +83,7 @@
         </div>
     </div>
 </header>
-<section class="about">
+<section class="about" id="aboutsection">
     <div class="about__AproposIm">
         
         <img class="about__AproposIm--imagesShap" src="images/shape_squer.png" alt="poussette">
@@ -98,9 +98,9 @@
             Laisser le bébé faireface a la mére. En poussant la pousset , li est pratique que la mére observe
             le bébé. easy fold : Vous pouvez plier cette poussette en quelques secondes.  
         </p>
-        <button class="btn btn--about ">
+        <a class="btn btn--about " href="#buy__form" >
             ACHETER MANTENANT
-        </button>
+        </a>
         <!-- about__Apropos--BtnAch  -->
     </div>
 </section>
@@ -150,7 +150,7 @@
         
     </div>
 </section> 
-<section class="features">
+<section class="features" id="features">
     <!-- <div class="features__shape-bg">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920px" height="981px" data-parallax="{&quot;x&quot;: 0, &quot;y&quot;: 0}"> <path fill-rule="evenodd" fill="rgb(252, 250, 251)" d="M0.000,-0.000 L1920.000,-0.000 L1920.000,699.697 C1920.000,699.697 1634.664,1289.311 1027.045,759.691 C813.812,573.831 462.508,819.658 244.090,819.658 C56.289,819.658 0.000,669.705 0.000,669.705 L0.000,-0.000 Z"></path> </svg>
     </div> -->
@@ -189,10 +189,10 @@
             </div>
 
         </div>
-        <button class="btn btn--carac">ACHETER MAINTENANT</button>
+        <a class="btn btn--carac" href="#buy__form" >ACHETER MAINTENANT</a>
     </div>
 </section>
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
     <div class="testimonials__heading">
         <h2 class="testimonials__heading--title">Témoignages</h2>
         <p class="testimonials__heading--description">Les clients disent
@@ -264,7 +264,7 @@
         </div>
     </div>
 </section>
-<section class="buy">
+<section class="buy" id="buy__form">
 <div class="buy__container">
     <div class="buy__row">
         <div class="buy__information" action="#" id="buy-form">
@@ -306,13 +306,13 @@
             </div>
 
         </div>
-        <form class="buy__form" action="#" method="POST">
+        <form class="buy__form"  action="#" method="POST">
             <h2 class="buy__form-title">INFORMATIONS DU CONTACT</h2>
             <ul class="buy__form-list">
                 <input type="text" id="fullname" placeholder="Nom & Prénom" class="buy__form-item">
-                <input type="tel" id="phone" placeholder="Téléphone" class="buy__form-item">
+                <input type="tel" id="phone" placeholder="Téléphone" required class="buy__form-item">
                 <p class="errorconf"></p>
-                <input type="tel" id="phone2" placeholder="Confirmation Téléphone" class="buy__form-item">
+                <input type="tel" id="phone2" placeholder="Confirmation Téléphone" required class="buy__form-item">
                 <p class="errorconf errorconf--two"></p>
                 <input type="text" id="adresse" placeholder="Adresse" class="buy__form-item">
                 
@@ -398,6 +398,31 @@
 
 </body>
 </html>
+<div class="buy-now-sticky">
+    <a href="#buy-form" class="btn btn--gold button-sticky b-center" style="margin: 0 auto;">شراء الآن</a>
+    <a href="" class="button-whatsapp button-sticky  hidden"><img src="dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" /> الواتساب</a>
+  </div>
+<div class="" id="popup">
+		<div class="popup__content ">
+			<div class="popup__right">
+			<!-- <?php if (isset($_GET['order'])) {echo "<script> fbq('track', 'Purchase');</script>";}?> -->
+				<a href="./" class="popup__close">&times;</a>
+				<div class="success-checkmark">
+					<div class="check-icon">
+						<span class="icon-line line-tip"></span>
+						<span class="icon-line line-long"></span>
+						<div class="icon-circle"></div>
+						<div class="icon-fix"></div>
+					</div>
+				</div>
+				<h3 class="heading-tertiary">Merci pour votre confiance</h3>
+				<p class="popup__text">
+					La demande a été enregistrée! Notre équipe vous contactera pour confirmer votre demande dans les plus brefs délais.<br>
+				</p>
+				<a class="btn btn--popup button-popup" href="./">Confirmer la commande</a>
+			</div>
+		</div>
+	</div>
 
 <!-- custom js -->
 <script>
