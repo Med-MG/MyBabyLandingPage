@@ -61,6 +61,9 @@
             @include responsive(tab-land) {  
                 bottom: 3rem;
             }
+            @include responsive(phone){
+                bottom: 16rem;
+            }
         }
     }
     &__featuresInfo{

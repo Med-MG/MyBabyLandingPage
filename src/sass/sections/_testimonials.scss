@@ -1,5 +1,7 @@
 .testimonials{
-    padding-top: 35rem;
+
+    padding-top: 12rem;
+
     &__heading{
         text-align: center;
         &--title{
@@ -11,7 +13,7 @@
     }
     &__container{
         margin: 1rem auto;
-        max-width: 120rem;
+        max-width: 125rem;
     }
     &__row{
         display: flex;
@@ -19,7 +21,7 @@
         margin-top: 5rem;
     }
     &__card{
-        margin: 0 3rem;
+        margin: 3rem;
         box-shadow: $default-shadow;
         padding: 4rem;
         border-radius: 2rem;

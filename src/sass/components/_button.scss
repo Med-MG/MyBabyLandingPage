@@ -99,16 +99,16 @@
         }
     }
     &--about {
-        background-color: none;
         color: #f56e96;
         padding: 2rem 8rem;
-        border: solid #f56e96;
+        border: 2px solid #f56e96;
         font-size: 2rem;
         font-weight: 600;
         margin: 1rem 2rem;
         /* margin-top: 3rem; */
         top: 4rem;
         position: relative;
+        background: white;
         // right: 20rem;
         // &::after {
         //     background-color: $secondary;
