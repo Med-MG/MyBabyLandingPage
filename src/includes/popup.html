@@ -1,0 +1,28 @@
+<div class="<?php
+if (isset($_GET['order'])) {
+    echo 'popup';
+}?> " id="popup">
+		<div class="popup__content <?php
+if (isset($_GET['order'])) {
+    echo 'show-content';
+}?>">
+			<div class="popup__right">
+			<?php if (isset($_GET['order'])) {echo "<script> fbq('track', 'Purchase');</script>";}?>
+				<a href="./" class="popup__close">&times;</a>
+				<div class="success-checkmark">
+					<div class="check-icon">
+						<span class="icon-line line-tip"></span>
+						<span class="icon-line line-long"></span>
+						<div class="icon-circle"></div>
+						<div class="icon-fix"></div>
+					</div>
+				</div>
+				<h3 class="heading-tertiary">شكرا جزيلاً على ثقتكم</h3>
+				<p class="popup__text">
+					لقد تم تسجيل الطلب !  سيتصل بكم فريق الدعم الفني
+          لتأكيد طلبكم في أقرب وقت ممكن <br>
+				</p>
+				<a class="btn btn--gold button-popup" href="./">استمر في التسوق</a>
+			</div>
+		</div>
+	</div>
