@@ -38,6 +38,9 @@
             @include responsive(phone-1){
                 grid-template-rows: 1fr 74em;
             }
+            @include custom_media(1116){
+                grid-template-rows: 1fr 53rem;
+            }
         }
         &-content{
             grid-area: 1 / 1 / 2 / 2;
@@ -91,13 +94,13 @@
                 width: 72rem;
                 transform: translate(7%, -13%);
                 @include custom_media(1162){
-                    transform: translate(7%,-29%);
+                    transform: translate(7%,-17%);
                 }
                 // @include responsive(tab-port-1){
                 //     transform: translate(7%,-29%);
                 // }
                 @include responsive(phone-1){
-                    transform: translate(0%,-9%);
+                    transform: translate(0%,-27%);
                     width: 60rem;
                 }
                 
@@ -114,14 +117,15 @@
                 @include responsive(tab-land){
                     transform:  translateX(-50%);
                     left: 50%;
+                    top: 16%;
                 }
                 @include responsive(tab-port-1){
                     transform:  translate(-50%, 15%);
-
+                    top: unset;
                 }
 
                 @include responsive(phone-1){
-                    top: 10rem;
+                    top: -1rem;
                     width: 45rem;
                     height: 45rem;
                 }
@@ -196,7 +200,7 @@
         @include responsive(phone-1){
             // right: 35.8rem;
             right: 40.8rem;
-            bottom: 55.9rem;
+            bottom: 33.9rem;
         }
     }
     &--seven{

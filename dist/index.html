@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
     <!-- Add the new slick-theme.css if you want the default styling -->
@@ -163,31 +164,28 @@
         <p class="features__featuresInfo--desc">Utilisable dès la naissance jusqu’à 4 ans et demi</p>
         <div class="features__featuresInfo--carac">
             <div class="caracteristique">
-                <img src="images/strProd2.png" alt="">
+                <img src="images/amort.jpg" alt="Amortissantes">
                 <p>Amortissantes</p>
             </div>
             <div class="caracteristique">
-                <img src="images/strProd2.png" alt="">
+                <img src="images/freinage.jpg" alt="Freinage">
                 <p>Freinage</p>
             </div>
             <div class="caracteristique">
-                <img src="images/strProd2.png" alt="">
+                <img src="images/Moustiquare.jpg" alt="Moustiquaire">
                 <p>Moustiquaire</p>
             </div>
             <div class="caracteristique">
-                <img src="images/strProd2.png" alt="">
-                <p>conduite 
-                    Révérsible</p>
+                <img src="images/conduiterev.jpg" alt="conduite Révérsibl">
+                <p>conduite Révérsible</p>
             </div>
             <div class="caracteristique">
-                <img src="images/strProd2.png" alt="">
-                <p>pliage
-                    facile</p>
+                <img src="images/pilagefacilee.jpeg" alt="pliage facile">
+                <p>pliage facile</p>
             </div>
             <div class="caracteristique">
-                <img src="images/strProd2.png" alt="">
-                <p>contrôler 
-                    facilement</p>
+                <img src="images/facilecond.jpeg" alt="contrôler facilement">
+                <p>contrôler facilement</p>
             </div>
 
         </div>
@@ -308,15 +306,18 @@
             </div>
 
         </div>
-        <form class="buy__form">
+        <form class="buy__form" action="#" method="POST">
             <h2 class="buy__form-title">INFORMATIONS DU CONTACT</h2>
             <ul class="buy__form-list">
-                <input type="text" placeholder="Nom & Prénom" class="buy__form-item">
-                <input type="text" placeholder="Téléphone" class="buy__form-item">
-                <input type="text" placeholder="Confirmation Téléphone" class="buy__form-item">
-                <input type="text" placeholder="Adresse" class="buy__form-item">
+                <input type="text" id="fullname" placeholder="Nom & Prénom" class="buy__form-item">
+                <input type="tel" id="phone" placeholder="Téléphone" class="buy__form-item">
+                <p class="errorconf"></p>
+                <input type="tel" id="phone2" placeholder="Confirmation Téléphone" class="buy__form-item">
+                <p class="errorconf errorconf--two"></p>
+                <input type="text" id="adresse" placeholder="Adresse" class="buy__form-item">
+                
             </ul>
-            <a href="#buy-form" class="btn btn--form">ACHETER</a>
+            <button href="#buy-form" type="submit" class="btn btn--form">ACHETER</button>
         </form>
     </div>
 </div>

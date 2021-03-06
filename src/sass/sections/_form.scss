@@ -138,6 +138,7 @@
         &-list{
             display: flex;
             flex-direction: column;
+            position: relative;
         }
         &-item{
             margin: 0 auto;
@@ -146,7 +147,7 @@
             font-size: 1.5rem;
             padding: 1.7rem 2rem;
             width: 60%;
-            border: 1px solid $secondary-variant;
+            border: 1px solid $primary;
             border-radius: .6rem;
             color: $primary-title;
             box-shadow: $default-shadow;
@@ -162,7 +163,20 @@
             @include custom_media(1048){
                 width: 72%;
             }
+
         }
     }
 
+}
+
+.errorconf{
+    color: $secondary;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 41%;
+    &--two{
+        top: 65%;
+    }
 }
