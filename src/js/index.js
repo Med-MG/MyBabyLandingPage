@@ -16,7 +16,7 @@ $(document).ready(function() {
     var fullname = $('#fullname').val();
     var phone = $('#phone').val();
     var phoneConfirmation = $('#phone2').val();
-    var adresse = $('#adresse').val();
+    var address = $('#address').val();
     if( phone == "" || phoneConfirmation == ""){
       $(".errorconf").html("phone fields are required");
       return;
@@ -30,20 +30,26 @@ $(document).ready(function() {
 
     // console.log('fdfdfdf')
 
-    var dataString = `fullname=${fullname}&phone=${phone}&adresse=${adresse}`;
+    var dataString = `fullname=${fullname}&phone=${phone}&address=${address}`;
     $("#popup").addClass('popup');
     $(".popup__content").addClass('show-content');
-    // $.ajax({
-    //   type : "POST",
-    //   url : "functions.php",
-    //   data : dataString,
-    //   cache : false,
-    //   success : function() {
-    //     $("#popup").addClass('popup');
-    //     $(".popup__content").addClass('show-content');
-    //     fbq('track', 'Purchase');
-    //   }
-    // });
+    $.ajax({
+      type : "POST",
+      url : "functions.php",
+      data : dataString,
+      cache : false,
+      success : function(data) {
+        if(data.code == 200){
+          $("#popup").addClass('popup');
+          $(".popup__content").addClass('show-content');
+          fbq('track', 'Purchase');
+          console.log(data.msg);
+        }else {
+          console.log("regestring product failed");
+        }
+
+      }
+    });
 
   })
 })
