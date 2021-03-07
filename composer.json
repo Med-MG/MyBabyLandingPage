@@ -1,0 +1,12 @@
+{
+    "name": "med/mybabystroller",
+    "require": {
+        "google/apiclient": "2.0"
+    },
+    "authors": [
+        {
+            "name": "MOUIGUINA MOHAMED",
+            "email": "mohamedmouiguina7@gmail.com"
+        }
+    ]
+}
