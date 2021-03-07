@@ -370,8 +370,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <div class="buy-now-sticky">
-    <a href="#buy-form" class="btn btn--gold button-sticky b-center" style="margin: 0 auto;">شراء الآن</a>
-    <a href="" class="button-whatsapp button-sticky  hidden"><img src="dist/dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" /> الواتساب</a>
+    <a href="#buy-form" class="btn btn--tertiary button-sticky b-center" style="margin: 0 auto;">Acheter Maintenant</a>
+    <a href="https://wa.link/jzrazw" class="button-whatsapp button-sticky  hidden"><img src="dist/dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" />Whatsapp</a>
   </div>
 <div class="" id="popup">
 		<div class="popup__content ">
