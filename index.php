@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="dist/css/util.css">
     <!-- our own css -->
     <link rel="stylesheet" href="dist/css/styles.css" />
-
+    <!-- Facebook Pixel Code -->
+    <!-- <?php //showpixles()?> -->
+    <!-- End Facebook Pixel Code -->
     <title>MyBaby.ma</title>  
   </head>
   <body>

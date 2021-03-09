@@ -42,7 +42,7 @@ $(document).ready(function() {
         if(data.code == 200){
           $("#popup").addClass('popup');
           $(".popup__content").addClass('show-content');
-          fbq('track', 'Purchase');
+          fbq('track', 'AddToCart');
           console.log(data.msg);
         }else {
           console.log("regestring product failed");
@@ -51,5 +51,10 @@ $(document).ready(function() {
       }
     });
 
+  });
+
+
+  $("#PurchaseConfirmed").click(function(){
+    fbq('track', 'Purchase');
   })
 })
