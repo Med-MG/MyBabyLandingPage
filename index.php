@@ -1,3 +1,4 @@
+<?php require_once "pixeldata.php";?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +23,7 @@
     <!-- our own css -->
     <link rel="stylesheet" href="dist/css/styles.css" />
     <!-- Facebook Pixel Code -->
-    <!-- <?php //showpixles()?> -->
+      <?php showpixles()?> 
     <!-- End Facebook Pixel Code -->
     <title>MyBaby.ma</title>  
   </head>
@@ -373,7 +374,7 @@
 
 <div class="buy-now-sticky">
     <a href="#buy-form" class="btn btn--tertiary button-sticky b-center" style="margin: 0 auto;">Acheter Maintenant</a>
-    <a href="https://wa.link/jzrazw" class="button-whatsapp button-sticky  hidden"><img src="dist/dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" />Whatsapp</a>
+    <a href="https://wa.link/jzrazw" class="button-whatsapp button-sticky "><img src="dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" />Whatsapp</a>
   </div>
 <div class="" id="popup">
 		<div class="popup__content ">

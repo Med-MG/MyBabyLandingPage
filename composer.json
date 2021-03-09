@@ -1,7 +1,9 @@
 {
     "name": "med/mybabystroller",
     "require": {
-        "google/apiclient": "2.0"
+        "google/apiclient": "2.0",
+        "guzzlehttp/guzzle": "~5.3.1"
+
     },
     "authors": [
         {

@@ -79,10 +79,11 @@ function showpixles(){
     if (empty($values)) {
         print "No data found.\n";
     } else {
-        foreach ($values as $row) {
-            // Print columns A and E, which correspond to indices 0 and 4.
-        echo  $row[0];
-        }
+        // foreach ($values as $row) {
+        //     // Print columns A and E, which correspond to indices 0 and 4.
+        // echo  $row[0];
+        // }
+        var_dump($values);
     }
 }
 // $response = $service->spreadsheets_values->get($spreadsheetId, $range);
