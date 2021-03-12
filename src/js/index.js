@@ -31,19 +31,20 @@ $(document).ready(function() {
     // console.log('fdfdfdf')
 
     var dataString = `fullname=${fullname}&phone=${phone}&address=${address}`;
-    $("#popup").addClass('popup');
-    $(".popup__content").addClass('show-content');
+    // $("#popup").addClass('popup');
+    // $(".popup__content").addClass('show-content');
     $.ajax({
       type : "POST",
       url : "functions.php",
       data : dataString,
       cache : false,
       success : function(data) {
-        if(data.code == 200){
+        var dataArr = $.parseJSON(data);
+        if(dataArr["code"] == 200){
           $("#popup").addClass('popup');
           $(".popup__content").addClass('show-content');
           fbq('track', 'AddToCart');
-          console.log(data.msg);
+          console.log(dataArr["msg"]);
         }else {
           console.log("regestring product failed");
         }

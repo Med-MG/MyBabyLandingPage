@@ -10,7 +10,7 @@ if(isset($_POST['phone'])){
     $client->setAuthConfig(__DIR__ . '/credentials.json');
     $client->setAccessType('offline');
     $service = new Google_Service_Sheets($client);
-    $spreadsheetId = "1R_tbrlbR-k7haT_HW9C_Yy3J75QnKCURUxuU113AtEM";
+    $spreadsheetId = "1mZUvoG57fQd3R7-jKJv-DrVPDx2LFdM4tuqOt7K_x7Y";
     //making a connection to the api
 
     $phone = trim($_POST['phone']);
@@ -20,7 +20,7 @@ if(isset($_POST['phone'])){
 
 
     //getting the last inserted row id
-    $range = "stroller!A1:D";
+    $range = "Stroller!A1:D";
     $response = $service->spreadsheets_values->get($spreadsheetId,$range);
     $values = $response->getValues();
     if (empty($values)) {
@@ -33,7 +33,7 @@ if(isset($_POST['phone'])){
 
 
 
-    $range = "stroller!A1:D";
+    $range = "Stroller!A1:D";
     $values = [
         [$inc, $fullName,  $phone, $address],
     ];

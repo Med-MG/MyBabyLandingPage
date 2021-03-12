@@ -183,11 +183,11 @@
                 <p>conduite Révérsible</p>
             </div>
             <div class="caracteristique">
-                <img src="dist/images/pilagefacilee.jpeg" alt="pliage facile">
+                <img src="dist/images/pilagefacilee.png" alt="pliage facile">
                 <p>pliage facile</p>
             </div>
             <div class="caracteristique">
-                <img src="dist/images/facilecond.jpeg" alt="contrôler facilement">
+                <img src="dist/images/facilecond.jpg" alt="contrôler facilement">
                 <p>contrôler facilement</p>
             </div>
 
